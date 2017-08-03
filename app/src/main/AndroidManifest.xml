@@ -16,7 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SecondActivity"></activity>
+        <activity android:name=".SecondActivity" />
+        <activity android:name=".timetable.activities.student.RegisterStudentActivity" />
+        <activity android:name=".timetable.activities.student.ConfirmStudentRegistrationActivity"></activity>
     </application>
 
 </manifest>

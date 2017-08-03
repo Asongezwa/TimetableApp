@@ -6,6 +6,6 @@ package com.example.administrator.timetableapp.timetable.services.student;
 
 public interface StudentLogin {
 
-        public String activateAccount(String username, String password);
+        String activateAccount(String username, String password);
     }
 

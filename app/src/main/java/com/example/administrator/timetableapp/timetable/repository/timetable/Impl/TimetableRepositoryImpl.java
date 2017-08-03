@@ -174,8 +174,10 @@ public class TimetableRepositoryImpl extends SQLiteOpenHelper implements com.exa
     }
 
     @Override
-    public void onCreate(SQLiteDatabase db) {
-        db.execSQL(DATABASE_CREATE);
+    public void onCreate(SQLiteDatabase db){
+        db.execSQL(DBConstants.DATABASE_CREATEA);
+        db.execSQL(DBConstants.DATABASE_CREATEB);
+        db.execSQL(DBConstants.DATABASE_CREATEC);
     }
 
     @Override

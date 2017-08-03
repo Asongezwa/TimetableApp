@@ -34,7 +34,10 @@ public class SubjectRepositoryImpl extends SQLiteOpenHelper implements SubjectRe
                 +COLUMN_SUBCODE + " TEXT NOT NULL );";
         @Override
         public void onCreate(SQLiteDatabase db){
-            db.execSQL(DATABASE_CREATE);
+
+            db.execSQL(DBConstants.DATABASE_CREATEA);
+            db.execSQL(DBConstants.DATABASE_CREATEB);
+            db.execSQL(DBConstants.DATABASE_CREATEC);
         }
 
         @Override

@@ -35,7 +35,11 @@ public class StudentRepositoryImpl extends SQLiteOpenHelper implements StudentRe
                                                 +COLUMN_PASSWORD + " TEXT NOT NULL );";
     @Override
     public void onCreate(SQLiteDatabase db){
-        db.execSQL(DATABASE_CREATE);
+
+
+        db.execSQL(DBConstants.DATABASE_CREATEA);
+        db.execSQL(DBConstants.DATABASE_CREATEB);
+        db.execSQL(DBConstants.DATABASE_CREATEC);
     }
 
     @Override
